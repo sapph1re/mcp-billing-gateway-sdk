@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mcp-billing-gateway"
-version = "0.1.0"
+version = "0.1.1"
 description = "Add Stripe subscriptions, per-call credits, and x402 crypto payments to any MCP server"
 readme = "README.md"
 license = { text = "MIT" }
