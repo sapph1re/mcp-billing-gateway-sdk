@@ -121,3 +121,5 @@ The gateway is open for use. If you need a self-hosted deployment, contact us.
 ## License
 
 MIT
+
+<!-- mcp-name: io.github.sapph1re/mcp-billing-gateway -->
