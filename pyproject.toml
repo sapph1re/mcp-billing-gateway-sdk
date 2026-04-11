@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-billing-gateway"
+version = "0.1.0"
+description = "Add Stripe subscriptions, per-call credits, and x402 crypto payments to any MCP server"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Cortex Labs" }
+]
+keywords = ["mcp", "billing", "stripe", "x402", "monetization", "payments", "model-context-protocol"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+mcp-billing-gateway = "mcp_billing_gateway:main"
+
+[project.urls]
+Homepage = "https://github.com/sapph1re/mcp-billing-gateway-sdk"
+Repository = "https://github.com/sapph1re/mcp-billing-gateway-sdk"
+"Live Service" = "https://mcp-billing-gateway-production.up.railway.app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mcp_billing_gateway"]
