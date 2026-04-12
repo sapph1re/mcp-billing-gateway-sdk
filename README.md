@@ -1,3 +1,4 @@
+<!-- mcp-name: io.github.sapph1re/mcp-billing-gateway -->
 # MCP Billing Gateway
 
 Add **Stripe subscriptions**, **per-call credits**, and **x402 crypto payments** to any MCP server — without writing billing code.
