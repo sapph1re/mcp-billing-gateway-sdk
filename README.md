@@ -2,6 +2,7 @@
 # MCP Billing Gateway
 
 [![Glama MCP Server](https://glama.ai/mcp/servers/sapph1re/mcp-billing-gateway-sdk/badge)](https://glama.ai/mcp/servers/sapph1re/mcp-billing-gateway-sdk)
+[![MCP.Directory](https://img.shields.io/badge/MCP.Directory-listed-blue)](https://mcp.directory/servers?q=mcp-billing-gateway)
 
 Add **Stripe subscriptions**, **per-call credits**, and **x402 crypto payments** to any MCP server — without writing billing code.
 
