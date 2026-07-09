@@ -1,0 +1,60 @@
+# Smithery Registry Manifest — MCP Billing Gateway
+# https://smithery.ai/server/mcp-billing-gateway
+#
+# Submission: https://smithery.ai/submit
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+    required: []
+  commandFunction: |-
+    (config) => ({
+      command: "uvx",
+      args: ["mcp-billing-gateway"],
+      env: {}
+    })
+
+# ── Metadata ─────────────────────────────────────────────────────────────────
+name: mcp-billing-gateway
+version: "0.1.2"
+description: |
+  Add Stripe subscriptions, per-call credits, and x402 crypto payments to any
+  MCP server — without writing billing code. A hosted billing proxy that sits
+  between AI agents and your MCP server. Register your server, set a pricing
+  plan, and point callers to the proxied URL. Billing handled transparently.
+
+author: Cortex Labs
+homepage: https://pypi.org/project/mcp-billing-gateway/
+repository: https://github.com/sapph1re/mcp-billing-gateway-sdk
+license: MIT
+category: Developer Tools
+
+keywords:
+  - billing
+  - payments
+  - stripe
+  - x402
+  - micropayments
+  - mcp-proxy
+  - monetization
+  - api-billing
+
+# ── Tools ────────────────────────────────────────────────────────────────────
+tools:
+  - name: get_billing_info
+    description: |
+      Returns service capabilities, supported payment methods (Stripe subscriptions,
+      per-call credits, x402 USDC), features, and integration documentation.
+      The full billing functionality runs on the hosted gateway — register as an
+      operator and proxy your MCP servers through it.
+    inputSchema:
+      type: object
+      properties: {}
+      required: []
+
+# ── Pricing ──────────────────────────────────────────────────────────────────
+pricing:
+  model: free
+  description: Free to use as a billing infrastructure tool. Operators set their own pricing for their proxied MCP servers.
