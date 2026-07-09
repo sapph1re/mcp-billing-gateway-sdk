@@ -10,6 +10,8 @@ MCP Billing Gateway is a hosted billing proxy that sits between AI agents and yo
 
 Live service: **https://mcp-billing-gateway-production.up.railway.app**
 
+**Tutorial:** [Monetize any MCP server in 10 minutes](https://github.com/sapph1re/mcp-billing-demo) — step-by-step demo with working code
+
 ## Installation
 
 ```bash
